@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import Logo from "../images/logo.png";
 import { BiLogIn } from "react-icons/bi";
-import { CgDarkMode } from "react-icons/cg";
-
 import { Link } from "react-router-dom"
+import CgDarkMode from "../App.js"
 
 const Header = () => {
+ 
   return (
     <Container id="navbar" className="Header-Container" fluid>
-      <Navbar collapseOnSelect expand="lg" className="Navbar-Main Sticky">
+      <Navbar collapseOnSelect expand="lg" className="Navbar-Main Sticky"> 
         <Navbar.Brand className="Navbar-Brand">
         <Link className="Navbar-Brand" style={{ textDecoration: "none" }} to="/">
           <img
@@ -60,7 +60,7 @@ const Header = () => {
             <Link  className="Nav-Link" style={{ textDecoration: "none" }} to="/signup">
             <BiLogIn className="Icon-Login" />
             </Link>
-            <CgDarkMode className="Icon-DarkMode" />
+        {/* {    <CgDarkMode/>} */}
           </div>
         </Nav>
         </Navbar.Collapse>

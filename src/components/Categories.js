@@ -26,7 +26,7 @@ const Categories = () => {
           </p>
         </div>
       <div data-aos="fade-up" className="Categories-Main">
-        <Card data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear" data-aos-offset="200" data-aos-once="false" className="bg-dark text-white Categories-Card hvr-grow">
+        <Card data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear" data-aos-offset="100" data-aos-once="false" className="bg-dark text-white Categories-Card hvr-grow">
           <Card.Img
             className="Card-Image"
             src={require("../images/aircraft.jpg")}
