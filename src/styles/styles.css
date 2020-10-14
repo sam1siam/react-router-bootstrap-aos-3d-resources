@@ -7,6 +7,10 @@
   font-family: Poppins, sans-serif;
 }
 
+.dark-mode {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
 body {
   overflow-x: hidden;
 }
@@ -30,6 +34,11 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 10px 60px;
+}
+
+.Navbar-Scroll {
+  background-color: #007bff;
+  color: #000;
 }
 
 .Navbar-Brand {
@@ -100,9 +109,48 @@ body {
 }
 
 .Icon-DarkMode {
-  min-width: 27px;
-  height: 27px;
   cursor: pointer;
+  z-index: 100000;
+  position: fixed;
+   display: flex;
+   width: 50px;
+   height: 50px;
+   bottom: 70px;
+   right: 20px;
+   align-items: flex-end;
+   justify-content: flex-end;
+   z-index: 1000000;
+   cursor: pointer;
+   transition: opacity 0.4s;
+   opacity: 0.5;
+   color: #007bff;
+   overflow: hidden;
+}
+
+.Icon-DarkMode:hover {
+  opacity: 1;
+}
+
+.Scroll-Top {
+  display: flex;
+  position: fixed;
+  width: 50px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  color: #007bff;
+  overflow: hidden;
+}
+
+.Scroll-Top:hover {
+  opacity: 1;
 }
 
 .Nav-Bar-Toggle {
@@ -235,6 +283,10 @@ body {
   font-size: 18px;
   text-align: left;
   color: rgb(189, 189, 189);
+}
+
+.card {
+  border-radius: 0;
 }
 
 .Categories-Card {
@@ -771,6 +823,7 @@ body {
 
   .Icon-Div {
     margin: 0 50px;
+    margin-bottom: 15px;
     justify-content: center;
     align-content: center;
   }
@@ -801,6 +854,17 @@ body {
   .Marketplace-Text {
     text-align: center;
     padding: 30px 60px;
+  }
+
+  .Icon-DarkMode {
+    right: 17px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .Scroll-Top {
+    height: 40px;
+    width: 34px;
   }
 }
 
